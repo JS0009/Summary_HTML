@@ -4,77 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+        <div class="info-text">
+        <img class="avatar" src="IMG/avatar.jpg" alt="Магомед Каитов">
 
-    <img style="width: 150px;" src="IMG/avatar.jpg" alt="Магомед Каитов">
+        <h1>Каитов Магомед</h1>
 
-    <h1>Каитов Магомед</h1>
+        <p>Я <strong>web-develeper</strong>. В данном курсе я изучаю <strong>htnl и css</strong>.</p>
+        <p>Я люблю <strong><em> web-разработку (full-stack development)</em></strong>, программировать <strong><em>
+            микроконтроллеры</em></strong>, 
+            заниматься <strong><em>радиоэлектроникой</em></strong>.</p>
+            
+            <h4>Cпиcoк социальных сетей:</h4>
 
-    <p>Я <strong>web-develeper</strong>. В данном курсе я изучаю <strong>htnl и css</strong>.</p>
-    <p>Я люблю <strong><em> web-разработку (full-stack development)</em></strong>, программировать <strong><em>
-        микроконтроллеры</em></strong>, 
-        заниматься <strong><em>радиоэлектроникой</em></strong>.</p>
+        </div>
 
-        <a href="#">Instagram</a>
-        |
-        <a href="#">YouTube</a>
-        |
-        <a href="#">Facebook</a>
+        <div class="info">
 
-        <h2>Мой хобби</h2>
-        <ol>
-            <li>Пчеловодство</li>
-            <li>Птицеводство</li>
-            <li>Растениводсто</li>
-        </ol>
+            <a href="#">Instagram</a>
+            |
+            <a href="#">YouTube</a>
+            |
+            <a href="#">Facebook</a>
 
-        <h2>Мой опыт</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Название</th>
-                    <th>Должность</th>
-                    <th>Год</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Закрытое учреждение |</td>
-                    <td>Системный администратор |</td>
-                    <td>2015-2019 |</td>
-                </tr>
-                <tr>
-                    <td>Частное дело |</td>
-                    <td>Программист микроконтроллеров |</td>
-                    <td>2019-2020 |</td>
-                </tr>
-                <tr>
-                    <td>Веб-разработчик |</td>
-                    <td>Фронтент |</td>
-                    <td>2021-сейчас|</td>
-                </tr>
-            </tbody>
-        </table>
-        <h2>Связаться со мной</h2>
-        <form action="/">
-            <div>
-                <lable for="name">Ваше имя:</lable>
-                <input type="text" id="name" placeholder="Введите имя">
             </div>
 
-            <div>
-                <lable for="name">Ваш email:</lable>
-                <input type="email" id="email" placeholder="Введите email">
-            </div>
 
-            <div>
-                <lable for="message">Ваше сообщение:</lable>
-                <br>
-                <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
-            </div>
-            <button type="submit">Отправить форму</button>
-        </form>
+        <div class="card bg-yellow">
+            <h2>Мой хобби</h2>
+            <ol class="list">
+                <li>Пчеловодство</li>
+                <li>Птицеводство</li>
+                <li>Растениводсто</li>
+            </ol>
+        </div>
+
+        <div class="card bg-red">
+            <h2>Мой опыт</h2>
+            <table class="table">
+                <thead>
+                    <!-- <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr> -->
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Закрытое учреждение |</td>
+                        <td>Системный администратор |</td>
+                        <td>2015-2019 |</td>
+                    </tr>
+                    <tr>
+                        <td>Частное дело |</td>
+                        <td>Программист микроконтроллеров |</td>
+                        <td>2019-2020 |</td>
+                    </tr>
+                    <tr>
+                        <td>Веб-разработчик |</td>
+                        <td>Фронтент |</td>
+                        <td>2021-сейчас|</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card bg-green">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt a illo voluptate debitis veniam officiis minus sed, accusamus iusto provident?
+        </div>
+        <form action="/" class="form">
+            
+            <h2>Связаться со мной</h2>
+                
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <lable for="name">Ваше имя:</lable>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+
+                    <div class="form-group">
+                        <lable for="name">Ваш email:</lable>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <lable for="message">Ваше сообщение:</lable>
+                    <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+                </div>
+
+                <button class="btn" type="submit">Отправить форму</button>
+
+            </form>
+    </div>
 </body>
 </html>
